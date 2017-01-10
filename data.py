@@ -5,9 +5,13 @@ import numpy as np
 
 class Data():
 
+    #I have made the games attribute private to protect the information. 
     def __init__(self):
-        self.games = pd.read_csv('games.csv')
+        self.__games = pd.read_csv('games.csv')
+
+    def show(self):
+        return self.__games
 
 
-data = Data()
-print(data.games.head())
+# data = Data(games)
+# print(data.games.head())

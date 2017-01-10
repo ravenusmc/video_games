@@ -38,12 +38,13 @@ def main():
     elif choice == 2:
         quit()
 
+#This function will allow the user to select what they want to do in the
+#program.
 def start_program():
     print("\033c")
+    #I am creating an object to hold all of the data
     data = Data()
-    print(data.games.head())
+    print(data.show().head())
 
-
-#games = pd.read_csv('games.csv')
 
 main()
