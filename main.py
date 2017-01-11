@@ -16,7 +16,7 @@ def quit():
     print()
 
 
-### Main Program functions here.
+####### Main Program functions here. #########
 
 #This is the main function of the program that will be used to run it.
 def main():
@@ -44,7 +44,15 @@ def start_program():
     print("\033c")
     #I am creating an object to hold all of the data
     data = Data()
-    print(data.show().head())
+    print("1. Look at information about a specific game")
+    print("2. Look at information about a specific system")
+    choice = int(input('What is your choice? '))
+    if choice == 1:
+        data.specific_title()
+        #data.info()
+        print(data.show())
+    elif choice == 2:
+        pass
 
 
 main()
