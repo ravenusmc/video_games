@@ -49,8 +49,9 @@ def start_program():
     choice = int(input('What is your choice? '))
     if choice == 1:
         data.specific_title()
+        data.specific_information()
         #data.info()
-        print(data.show())
+        #print(data.show())
     elif choice == 2:
         pass
 
