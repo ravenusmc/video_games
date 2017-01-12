@@ -5,16 +5,7 @@ import numpy as np
 #importing all files that will be used in this program.
 from valid import *
 from data import *
-
-
-### Functions that will support the main program below here.
-
-def quit():
-    print("\033c")
-    print('Sorry you don"t want to use the program')
-    print('Maybe next time...Good Bye!')
-    print()
-
+from support import *
 
 ####### Main Program functions here. #########
 
@@ -28,32 +19,36 @@ def main():
     print()
     print('1. Use Program')
     print('2. Quit')
+    #This object will be called to execute all support functions
+    support = Support()
     choice = int(input('What is your choice: '))
     print(choice)
     while not main_valid(choice):
-        print("That choice is not acceptable!")
+        print('That choice is not acceptable!')
         choice = int(input('What is your choice: '))
     if choice == 1:
-        start_program()
+        start_program(support)
     elif choice == 2:
-        quit()
+        support.quit()
 
 #This function will allow the user to select what they want to do in the
 #program.
-def start_program():
+def start_program(support):
     print("\033c")
     #I am creating an object to hold all of the data
     data = Data()
-    print("1. Look at information about a specific game")
-    print("2. Look at information about a specific system")
+    print('1. Look at information about a specific game')
+    print('2. Look at information about a specific system')
+    print('3. Quit')
     choice = int(input('What is your choice? '))
     if choice == 1:
         game_title = data.specific_title()
         data.specific_information(game_title)
-        #data.info()
-        #print(data.show())
+        start_program(support)
     elif choice == 2:
         pass
+    elif choice == 3:
+        support.quit()
 
 
 main()

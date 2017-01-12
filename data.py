@@ -2,6 +2,9 @@
 import pandas as pd
 import numpy as np
 
+#importing validation file
+from valid import *
+
 #This class sets up the data frame and contains all the methods to act
 #on that data frame.
 class Data():
@@ -24,6 +27,8 @@ class Data():
         input('Press enter to continue ')
         return title_name
 
+    #This method will allow the user to look at specific information on a game
+    #the the user selects.
     def specific_information(self, game_title):
         print('\033c')
         print('1. Genre')
@@ -31,26 +36,37 @@ class Data():
         print('3. Release Date')
         print('4. Global Sales')
         option = int(input('What is your option? '))
+        while not specific_information_valid(option):
+            print('That is not a valid option!')
+            option = int(input('What is your option? '))
         if option == 1:
             genre = self.__games[[3]]
             #This center line, in options 1 through 3 I really do not need.
             genre_name = genre[[0]]
             genre = genre_name.genre[1]
             print('The genre for', game_title, 'is', genre)
+            print()
+            input('Press Enter to back to the main menu')
         elif option == 2:
             publisher = self.__games[[4]]
             publisher_name = publisher[[0]]
             publisher = publisher_name.publisher[1]
             print('The publisher for', game_title, 'is', publisher)
+            print()
+            input('Press Enter to back to the main menu')
         elif option == 3:
             release_date = self.__games[[10]]
             release_data_name = release_date[[0]]
             release_date = release_data_name.release_date[1]
             print('The release date for', game_title, 'is', release_date)
+            print()
+            input('Press Enter to back to the main menu')
         elif option == 4:
             global_sales = self.__games[[9]]
             global_sales = global_sales.global_sales[1]
             print('The global_sales for', game_title, ', in millions, is', global_sales)
+            print()
+            input('Press Enter to back to the main menu')
 
 
 

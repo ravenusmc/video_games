@@ -5,3 +5,9 @@ def main_valid(choice):
         return True
     else:
         return False
+
+def specific_information_valid(option):
+    if option == 1 or option == 2 or option == 3 or option == 4:
+        return True
+    else:
+        return False
