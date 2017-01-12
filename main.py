@@ -48,8 +48,8 @@ def start_program():
     print("2. Look at information about a specific system")
     choice = int(input('What is your choice? '))
     if choice == 1:
-        data.specific_title()
-        data.specific_information()
+        game_title = data.specific_title()
+        data.specific_information(game_title)
         #data.info()
         #print(data.show())
     elif choice == 2:
