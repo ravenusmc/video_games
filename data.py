@@ -40,19 +40,15 @@ class Data():
             print('That is not a valid option!')
             option = int(input('What is your option? '))
         if option == 1:
-
             genre = self.__games[[3]]
             print(genre)
-            input('Enter test 1 ')
-
-            genre = genre.genre[genre]
-            # genre = genre.genre[1] works!
-            print(genre)
-            input('enter test 2 ')
-
+            input('enter')
+            game_index = genre.index[0]
+            genre = genre.genre[game_index]
             print('The genre for', game_title, 'is', genre)
             print()
             input('Press Enter to back to the main menu')
+
         elif option == 2:
             publisher = self.__games[[4]]
             publisher_name = publisher[[0]]
