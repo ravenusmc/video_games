@@ -40,10 +40,16 @@ class Data():
             print('That is not a valid option!')
             option = int(input('What is your option? '))
         if option == 1:
+
             genre = self.__games[[3]]
-            #This center line, in options 1 through 3 I really do not need.
-            genre_name = genre[[0]]
-            genre = genre_name.genre[1]
+            print(genre)
+            input('Enter test 1 ')
+
+            #genre = genre.genre[2]
+            # genre = genre.genre[1] works!
+            print(genre)
+            input('enter test 2 ')
+
             print('The genre for', game_title, 'is', genre)
             print()
             input('Press Enter to back to the main menu')
@@ -71,6 +77,8 @@ class Data():
 
 
 
-# data = Data()
-# data.specific_title()
-# data.specific_information()
+data = Data()
+game_title = data.specific_title()
+# print(data.show())
+# input('enter')
+data.specific_information(game_title)
