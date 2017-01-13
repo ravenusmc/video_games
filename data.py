@@ -69,7 +69,8 @@ class Data():
             input('Press Enter to back to the main menu')
         elif option == 4:
             global_sales = self.__games[[9]]
-            global_sales = global_sales.global_sales[1]
+            game_index = global_sales.index[0]
+            global_sales = global_sales.global_sales[game_index]
             print('The global_sales for', game_title, ', in millions, is', global_sales)
             print()
             input('Press Enter to back to the main menu')
