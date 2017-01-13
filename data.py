@@ -40,10 +40,14 @@ class Data():
             print('That is not a valid option!')
             option = int(input('What is your option? '))
         if option == 1:
+            #This line of code will get me the information for the genre
+            #returned in a series.
             genre = self.__games[[3]]
-            print(genre)
-            input('enter')
+            #Once I have the series, I need to pull the specific value of the index
+            #for the game.
             game_index = genre.index[0]
+            #Once I have the game index in the CSV file, I can use it to target
+            #the specific value-in this case the genre.
             genre = genre.genre[game_index]
             print('The genre for', game_title, 'is', genre)
             print()
@@ -51,15 +55,15 @@ class Data():
 
         elif option == 2:
             publisher = self.__games[[4]]
-            publisher_name = publisher[[0]]
-            publisher = publisher_name.publisher[1]
+            game_index = publisher.index[0]
+            publisher = publisher.publisher[game_index]
             print('The publisher for', game_title, 'is', publisher)
             print()
             input('Press Enter to back to the main menu')
         elif option == 3:
             release_date = self.__games[[10]]
-            release_data_name = release_date[[0]]
-            release_date = release_data_name.release_date[1]
+            game_index = release_date.index[0]
+            release_date = release_date.release_date[game_index]
             print('The release date for', game_title, 'is', release_date)
             print()
             input('Press Enter to back to the main menu')
