@@ -45,7 +45,7 @@ class Data():
             print(genre)
             input('Enter test 1 ')
 
-            #genre = genre.genre[2]
+            genre = genre.genre[genre]
             # genre = genre.genre[1] works!
             print(genre)
             input('enter test 2 ')
