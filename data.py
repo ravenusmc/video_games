@@ -49,14 +49,15 @@ class Data():
             #Once I have the game index in the CSV file, I can use it to target
             #the specific value-in this case the genre.
             genre = genre.genre[game_index]
+            print()
             print('The genre for', game_title, 'is', genre)
             print()
             input('Press Enter to back to the main menu')
-
         elif option == 2:
             publisher = self.__games[[4]]
             game_index = publisher.index[0]
             publisher = publisher.publisher[game_index]
+            print()
             print('The publisher for', game_title, 'is', publisher)
             print()
             input('Press Enter to back to the main menu')
@@ -64,6 +65,7 @@ class Data():
             release_date = self.__games[[10]]
             game_index = release_date.index[0]
             release_date = release_date.release_date[game_index]
+            print()
             print('The release date for', game_title, 'is', release_date)
             print()
             input('Press Enter to back to the main menu')
@@ -71,6 +73,7 @@ class Data():
             global_sales = self.__games[[9]]
             game_index = global_sales.index[0]
             global_sales = global_sales.global_sales[game_index]
+            print()
             print('The global_sales for', game_title, ', in millions, is', global_sales)
             print()
             input('Press Enter to back to the main menu')
@@ -78,8 +81,8 @@ class Data():
 
 
 
-data = Data()
-game_title = data.specific_title()
+# data = Data()
+# game_title = data.specific_title()
 # print(data.show())
 # input('enter')
-data.specific_information(game_title)
+# data.specific_information(game_title)
