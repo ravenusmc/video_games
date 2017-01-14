@@ -46,8 +46,11 @@ def start_program(support):
         data.specific_information(game_title)
         start_program(support)
     elif choice == 2:
-        pass
+        data.specific_system()
+        print(data.show())
+        input('Press Enter to Continue ')
+        start_program(support)
     elif choice == 3:
         support.quit()
-        
+
 main()

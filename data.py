@@ -18,6 +18,7 @@ class Data():
     def show(self):
         return self.__games
 
+
     #This method will allow the user to select a specific title to look at
     def specific_title(self):
         print('\033c')
@@ -77,6 +78,15 @@ class Data():
             print('The global_sales for', game_title, ', in millions, is', global_sales)
             print()
             input('Press Enter to back to the main menu')
+
+    #This method will allow the user to look at games for a specific system.
+    def specific_system(self):
+        print('\033c')
+        system = input('Please enter the name of the system: ')
+        self.__games = self.__games[self.__games.platform == system ]
+        input('Press Enter to back to the main menu')
+
+
 
 
 
