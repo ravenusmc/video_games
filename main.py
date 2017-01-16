@@ -39,7 +39,8 @@ def start_program(support):
     data = Data()
     print('1. Look at information about a specific game')
     print('2. Look at information about a specific system')
-    print('3. Quit')
+    print('3. Look at critic scores')
+    print('4. Quit')
     choice = int(input('What is your choice? '))
     if choice == 1:
         game_title = data.specific_title()
@@ -51,6 +52,11 @@ def start_program(support):
         input('Press Enter to Continue ')
         start_program(support)
     elif choice == 3:
+        data.critic_score()
+        print(data.show())
+        input('Press Enter to Continue ')
+        start_program(support)
+    elif choice == 4:
         support.quit()
 
 main()

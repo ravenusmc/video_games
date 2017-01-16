@@ -28,6 +28,16 @@ class Data():
         input('Press enter to continue ')
         return title_name
 
+    #This method will allow the user to see a game based on a critic score.
+    def critic_score(self):
+        print('\033c')
+        print('''
+        Please note, that the critic score will be from what the user
+        enters to 100. So, 85 will show games with a score of 85 to 100.
+                ''')
+        score = int(input('\tPlease enter a score that you want to see: '))
+        self.__games = self.__games[self.__games.critic_score >= score]
+
     #This method will allow the user to look at specific information on a game
     #the the user selects.
     def specific_information(self, game_title):
@@ -85,10 +95,6 @@ class Data():
         system = input('Please enter the name of the system: ')
         self.__games = self.__games[self.__games.platform == system ]
         input('Press Enter to back to the main menu')
-
-
-
-
 
 
 # data = Data()
