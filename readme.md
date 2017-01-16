@@ -26,6 +26,6 @@ Once the program is downloaded, simply run the program as you would any other
 python program. The program will start up and allow the user to select what
 they want to look at in regards to video games.
 
-### Preview
+# Preview
 
 To see a video that talks about this project please go here: COMING SOON.
