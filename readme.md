@@ -10,7 +10,7 @@ This is another project in which I will be building my skills with Pandas.
 
 
 # Getting started
-### Installing / Requirements 
+### Installing / Requirements
 
 To use this program, you will need Pandas and numpy installed.
 
@@ -19,3 +19,13 @@ To use this program, you will need Pandas and numpy installed.
 1. Python 3.4
 2. Pandas
 3. Numpy
+
+### Operation
+
+Once the program is downloaded, simply run the program as you would any other
+python program. The program will start up and allow the user to select what
+they want to look at in regards to video games.
+
+### Preview
+
+To see a video that talks about this project please go here: COMING SOON.
