@@ -10,6 +10,12 @@ This is another project in which I will be building my skills with Pandas.
 
 
 # Getting started
-### Installing
+### Installing / Requirements 
 
 To use this program, you will need Pandas and numpy installed.
+
+### Technology Stack
+
+1. Python 3.4
+2. Pandas
+3. Numpy
