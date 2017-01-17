@@ -42,6 +42,9 @@ def start_program(support):
     print('3. Look at critic scores')
     print('4. Quit')
     choice = int(input('What is your choice? '))
+    while not data_valid(choice):
+        print('That option is not valid')
+        choice = int(input('What is your choice? '))
     if choice == 1:
         game_title = data.specific_title()
         data.specific_information(game_title)

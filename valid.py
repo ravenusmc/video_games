@@ -11,3 +11,9 @@ def specific_information_valid(option):
         return True
     else:
         return False
+
+def data_valid(choice):
+    if choice == 1 or choice == 2 or choice == 3 or choice == 4:
+        return True
+    else:
+        return False
