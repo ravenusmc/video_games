@@ -28,4 +28,4 @@ they want to look at in regards to video games.
 
 # Preview
 
-To see a video that talks about this project please go here: COMING SOON.
+To see a video that talks about this project please go here: https://codingsaga.wordpress.com/2017/01/17/video-game-data-science-project/
