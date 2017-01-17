@@ -105,10 +105,3 @@ class Data():
         system = input('Please enter the name of the system: ')
         self.__games = self.__games[self.__games.platform == system ]
         input('Press Enter to back to the main menu')
-
-
-# data = Data()
-# game_title = data.specific_title()
-# print(data.show())
-# input('enter')
-# data.specific_information(game_title)
