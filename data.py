@@ -38,6 +38,15 @@ class Data():
         score = int(input('\tPlease enter a score that you want to see: '))
         self.__games = self.__games[self.__games.critic_score >= score]
 
+    def critic_score_year(self):
+        print('\033c')
+        score = int(input('\tPlease enter a score that you want to see: '))
+        year = int(input('\tPlease enter a year you would like to look at: '))
+        self.__games = self.__games[(self.__games.critic_score >= score) & (self.__games.release_year == year)]
+
+
+
+
     #This method will allow the user to look at specific information on a game
     #the the user selects.
     def specific_information(self, game_title):

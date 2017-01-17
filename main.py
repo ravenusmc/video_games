@@ -52,9 +52,20 @@ def start_program(support):
         input('Press Enter to Continue ')
         start_program(support)
     elif choice == 3:
-        data.critic_score()
-        print(data.show())
-        input('Press Enter to Continue ')
+        print('1. Look at critic score data for all years')
+        print('2. Look at critic score data for specific year')
+        choice = int(input('What is your choice: '))
+        while not main_valid(choice):
+            print('That is not a valid selection!')
+            choice = int(input('What is your choice: '))
+        if choice == 1:
+            data.critic_score()
+            print(data.show())
+            input('Press Enter to Continue ')
+        elif choice == 2:
+            data.critic_score_year()
+            print(data.show())
+            input('Press Enter to Continue ')
         start_program(support)
     elif choice == 4:
         support.quit()

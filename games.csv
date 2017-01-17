@@ -1,4 +1,4 @@
-name,platform,release year,genre,publisher,north america sales,europe sales,japan sales,rest of world sales,global_sales,release_date,critic_score,critic outof,critic count,user score,user count,developer,rating
+name,platform,release_year,genre,publisher,north america sales,europe sales,japan sales,rest of world sales,global_sales,release_date,critic_score,critic outof,critic count,user score,user count,developer,rating
 Wii Sports,Wii,2006,Sports,Nintendo,41.02,28.66,3.77,8.39,81.84,"Nov 19, 2006",76,100,51,8.2,229,Nintendo,E
 Mario Kart Wii,Wii,2008,Racing,Nintendo,15.07,12.36,3.71,3.19,34.33,"Apr 27, 2008",82,100,73,8.2,503,Nintendo,E
 Wii Sports Resort,Wii,2009,Sports,Nintendo,15.38,10.71,3.25,2.89,32.24,"Jul 26, 2009",80,100,73,7.7,132,Nintendo,E
